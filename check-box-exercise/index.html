@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br>
+    <div class="visaContainer">
+    <input type="radio" id="visaBtn" name="card">
+    <img src="visaCard.png" alt="visa">
+    <label for="visaBtn" class="myCards">Visa</label><br>
+    </div>
+    <div class="masterContainer">
+    <input type="radio" id="mastercardBtn" name="card">
+    <img src="masterCard.png" alt="mastercard">
+    <label for="mastercardBtn" class="myCards">MasterCard</label><br>
+    </div>
+    <div class="payContainer">
+    <input type="radio" id="paypalBtn" name="card">
+    <img src="payPal.png" alt="paypal">
+    <label for="paypalBtn" class="myCards">PayPal</label><br>
+    </div>
+    <input type="checkbox" id="myCheckBox">
+    <label for="myCheckBox" class="myCards">subscribe</label> <br><br>
+    <button type="submit" id="mySubmit">submit</button>
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
