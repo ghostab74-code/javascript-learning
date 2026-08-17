@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vazirmatn", sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* Our Beautiful "HEADER" Just Look at it!! */
+
+.header {
+    height: 72px;
+    border-bottom: 1px solid #eee;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 40px;
+
+    gap: 30px;
+
+    position: sticky;
+    top: 0;
+
+    background-color: #837EB1;
+
+    z-index: 100;
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    min-width: 180px;
+}
+
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0D083B;
+}
+
+
+.city {
+    font-size: 14px;
+    color: #353535;
+
+    display: flex;
+    gap: 5px;
+}
+
+
+.search {
+    flex: 1;
+
+    height: 45px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    max-width: 600px;
+}
+
+
+.search-icon {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+
+.search input {
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    width: 100%;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+
+.header-left {
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.header-left button {
+    font-family: inherit;
+
+    background: white;
+
+    border: none;
+
+    padding: 10px 12px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+.post-btn {
+    background-color: #1F1959 !important;
+
+    color: white !important;
+
+    border-radius: 5px;
+
+    font-weight: 600;
+}
+
+/* MAIN what can I say! */
+
+.main {
+    display: flex;
+
+    max-width: 1500px;
+
+    margin: auto;
+
+    min-height: 100vh;
+    
+    background-color: #ddebf9;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 270px;
+
+    flex-shrink: 0;
+
+    padding: 30px 25px;
+
+    border-left: 1px solid #eee;
+
+    min-height: 100vh;
+}
+
+
+.sidebar h2 {
+    font-size: 18px;
+
+    color: #0D083B;
+
+    margin-bottom: 20px;
+}
+
+
+.category {
+    padding: 10px 5px;
+
+    font-size: 14px;
+
+    color: #160e61;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+
+
+.category:hover {
+    background-color: #b9b3fb;
+
+    color: #e2d5f9;
+}
+
+
+.sidebar hr {
+    border: none;
+
+    border-top: 1px solid #8632f3;
+
+    margin: 25px 0;
+}
+
+
+.filter {
+    padding: 15px 0;
+
+    color: #0D083B;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.filter-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.filter-title span {
+    color: #968aa3;
+
+    font-size: 13px;
+}
+
+
+.filter h3 {
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+
+.price-inputs {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.price-inputs input {
+    width: 50%;
+
+    height: 40px;
+
+    border: 1px solid #6d7499;
+
+    border-radius: 5px;
+
+    padding: 0 10px;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+
+.price-inputs input:focus {
+    border-color: #999;
+}
+
+
+.checkbox {
+    display: flex;
+
+    gap: 8px;
+
+    align-items: center;
+
+    padding: 18px 0;
+
+    font-size: 14px;
+}
+
+
+/* CONTENT The Good Stuff */
+
+.content {
+    flex: 1;
+
+    padding: 30px;
+}
+
+
+.content-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.content-header h1 {
+    font-size: 22px;
+
+    color: #0D083B;
+
+    margin-bottom: 5px;
+}
+
+
+.content-header p {
+    color: #6d7499;
+
+    font-size: 13px;
+}
+
+
+.sort-btn {
+    background: rgb(181, 158, 221);
+
+    border: 1px solid #ddd;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+
+/* ================= ADS ================= */
+
+.ads {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+
+.card {
+    width: calc(33.333% - 12px);
+
+    min-width: 250px;
+
+    border: 1px solid #c2abe1;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    background-color: rgb(229, 210, 234);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.card:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transform: translateY(-2px);
+}
+
+
+.card-image {
+    height: 190px;
+
+    background-color: #eeeeee;
+
+    position: relative;
+}
+
+
+.badge {
+    position: absolute;
+
+    bottom: 10px;
+
+    right: 10px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    color: white;
+
+    border-radius: 4px;
+
+    padding: 3px 7px;
+
+    font-size: 12px;
+}
+
+
+.card-info {
+    padding: 15px;
+}
+
+
+.card-info h3 {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+
+.card-info p {
+    font-size: 12px;
+
+    color: #777;
+
+    margin-top: 6px;
+}
+
+
+.card-info strong {
+    display: block;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+
+    font-weight: 600;
+}
+
+
+.promoted {
+    color: #a62626 !important;
+}
+
+
+.condition {
+    color: #777;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    border-top: 1px solid #eee;
+
+    padding: 30px 50px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+.footer-links span {
+    cursor: pointer;
+}
+
+
+.footer-links span:hover {
+    color: #150422;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+
+    .card {
+        width: calc(50% - 9px);
+    }
+
+    .header-left button:not(.post-btn) {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .header {
+        padding: 0 15px;
+
+        gap: 15px;
+    }
+
+    .header-right {
+        min-width: auto;
+    }
+
+    .city {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        padding: 20px 15px;
+    }
+
+    .card {
+        width: calc(50% - 9px);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .search {
+        max-width: none;
+    }
+
+    .header-left {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-image {
+        height: 210px;
+    }
+
+}
